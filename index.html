@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Even</title>
+</head>
+
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <h3>(Is Even: True) & (Is Odd: False)   </h3>
+    <input type="number" id="user">
+    <input type="submit" onclick="IsEven()" value="Add">
+    <h4>You Enter : <span id="num1"></span></h4>
+    <h4>Result : <span id="result"></span></h4>
+</body>
+<script>
+    function IsEven(num) {
+        num = document.getElementById("user").value;
+        if (num % 2 === 0) {
+            document.getElementById("num1").innerHTML = num;
+            return document.getElementById("result").innerHTML = true;
+        }
+        else {
+            document.getElementById("num1").innerHTML = num;
+            return document.getElementById("result").innerHTML = false;
+        }
+    }
+</script>
+
+</html>
